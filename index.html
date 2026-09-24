@@ -3,126 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Radhey A1 Notes</title>
 
 <style>
-* {
-  box-sizing: border-box;
+*{
+  box-sizing:border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f7fb;
-  color: #222;
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f5f7fb;
+  color:#222;
 }
 
-header {
-  background: linear-gradient(135deg, #5b21b6, #7c3aed);
-  color: white;
-  text-align: center;
-  padding: 35px 15px;
+header{
+  background:linear-gradient(135deg,#5b21b6,#7c3aed);
+  color:white;
+  text-align:center;
+  padding:35px 15px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 32px;
+header h1{
+  margin:0;
+  font-size:32px;
 }
 
-header p {
-  margin-top: 10px;
-  font-size: 16px;
+.thought{
+  margin-top:12px;
+  font-style:italic;
 }
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 25px 15px;
+.container{
+  max-width:950px;
+  margin:auto;
+  padding:25px 15px;
 }
 
-.section-title {
-  text-align: center;
-  margin: 30px 0 20px;
+h2{
+  text-align:center;
+  margin:25px 0;
 }
 
-.class-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
+.class-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
 }
 
-.class-card {
-  background: white;
-  border-radius: 15px;
-  padding: 22px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+.class-card{
+  background:white;
+  border-radius:14px;
+  padding:20px;
+  box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
-.class-card h3 {
-  margin-top: 0;
-  color: #5b21b6;
+.class-card h3{
+  color:#5b21b6;
+  margin-top:0;
 }
 
-.chapter {
-  border-top: 1px solid #eee;
-  padding: 14px 0;
+.chapter{
+  padding:13px 0;
+  border-top:1px solid #eee;
 }
 
-.chapter:first-of-type {
-  border-top: none;
+.chapter:first-of-type{
+  border-top:none;
 }
 
-.chapter-name {
-  font-weight: bold;
-  margin-bottom: 10px;
+.chapter a{
+  display:block;
+  text-decoration:none;
+  background:#7c3aed;
+  color:white;
+  padding:10px;
+  border-radius:8px;
+  text-align:center;
+  margin-top:8px;
 }
 
-.buttons {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+.chapter a:hover{
+  opacity:.9;
 }
 
-button,
-.demo-btn,
-.buy-btn {
-  border: none;
-  border-radius: 8px;
-  padding: 9px 13px;
-  text-decoration: none;
-  font-size: 14px;
-  cursor: pointer;
+.hidden{
+  display:none;
 }
 
-.demo-btn {
-  background: #16a34a;
-  color: white;
+.back{
+  background:#555 !important;
 }
 
-.buy-btn {
-  background: #7c3aed;
-  color: white;
+.chapter-page{
+  background:white;
+  border-radius:15px;
+  padding:25px;
+  box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
-.note {
-  background: #fff7ed;
-  border-left: 5px solid #f97316;
-  padding: 15px;
-  margin: 25px 0;
-  border-radius: 8px;
+.option{
+  margin-top:15px;
 }
 
-footer {
-  text-align: center;
-  background: #111827;
-  color: white;
-  padding: 25px;
-  margin-top: 35px;
+.demo{
+  background:#16a34a !important;
 }
 
-.small {
-  font-size: 13px;
-  color: #666;
+.buy{
+  background:#7c3aed !important;
+}
+
+.download{
+  background:#2563eb !important;
+}
+
+.note{
+  background:#fff7ed;
+  padding:14px;
+  border-left:4px solid #f97316;
+  border-radius:7px;
+  margin-bottom:20px;
 }
 </style>
 </head>
@@ -131,198 +133,462 @@ footer {
 
 <header>
   <h1>📚 Radhey A1 Notes</h1>
-  <p>Science Notes • DPP • Study Material</p>
+  <div class="thought">
+    "Learn today, understand tomorrow."
+  </div>
 </header>
 
 <div class="container">
 
-  <div class="note">
-    <b>🎁 Free Demo:</b> Preview sample notes before purchasing.
-    <br>
-    <span class="small">
-      Paid notes are provided only after successful payment verification.
-    </span>
-  </div>
+<!-- ================= HOME ================= -->
 
-  <h2 class="section-title">Choose Your Class</h2>
+<div id="home">
 
-  <div class="class-grid">
+<h2>Choose Your Class</h2>
 
-    <!-- ================= CLASS 9 ================= -->
-    <div class="class-card">
-      <h3>📘 Class 9</h3>
+<div class="class-list">
 
-      <!-- ADD CLASS 9 CHAPTERS HERE -->
+<div class="class-card">
+<h3>📘 Class 9</h3>
+<a class="chapter" href="#" onclick="showPage('class9')">
+Open Class 9
+</a>
+</div>
 
-      <div class="chapter">
-        <div class="chapter-name">Chapter 1 — Add Chapter Name</div>
+<div class="class-card">
+<h3>📗 Class 10</h3>
+<a class="chapter" href="#" onclick="showPage('class10')">
+Open Class 10
+</a>
+</div>
 
-        <div class="buttons">
-          <a class="demo-btn" href="#" target="_blank">
-            Free Demo
-          </a>
+<div class="class-card">
+<h3>📕 Class 11</h3>
+<a class="chapter" href="#" onclick="showPage('class11')">
+Open Class 11
+</a>
+</div>
 
-          <a class="buy-btn" href="#">
-            Buy Notes ₹100
-          </a>
-        </div>
-      </div>
+<div class="class-card">
+<h3>📙 Class 12</h3>
+<a class="chapter" href="#" onclick="showPage('class12')">
+Open Class 12
+</a>
+</div>
 
-    </div>
+<div class="class-card">
+<h3>🧬 B.Sc Medical Science</h3>
+<a class="chapter" href="#" onclick="showPage('bsc')">
+Open B.Sc
+</a>
+</div>
 
+<div class="class-card">
+<h3>🧪 M.Sc Chemistry</h3>
+<a class="chapter" href="#" onclick="showPage('msc')">
+Open M.Sc Chemistry
+</a>
+</div>
 
-    <!-- ================= CLASS 10 ================= -->
-    <div class="class-card">
-      <h3>📗 Class 10</h3>
-
-      <!-- ADD CLASS 10 CHAPTERS HERE -->
-
-      <div class="chapter">
-        <div class="chapter-name">Chapter 1 — Add Chapter Name</div>
-
-        <div class="buttons">
-          <a class="demo-btn" href="#" target="_blank">
-            Free Demo
-          </a>
-
-          <a class="buy-btn" href="#">
-            Buy Notes ₹100
-          </a>
-        </div>
-      </div>
-
-    </div>
+</div>
+</div>
 
 
-    <!-- ================= CLASS 11 ================= -->
-    <div class="class-card">
-      <h3>📕 Class 11</h3>
+<!-- ================= CLASS 9 ================= -->
 
-      <!-- ADD CLASS 11 CHAPTERS HERE -->
+<div id="class9" class="hidden">
 
-      <div class="chapter">
-        <div class="chapter-name">Chapter 1 — Add Chapter Name</div>
+<h2>Class 9</h2>
 
-        <div class="buttons">
-          <a class="demo-btn" href="#" target="_blank">
-            Free Demo
-          </a>
+<div class="class-card">
 
-          <a class="buy-btn" href="#">
-            Buy Notes ₹100
-          </a>
-        </div>
-      </div>
+<!-- Add the verified current NCERT Class 9 chapter names here -->
 
-    </div>
+<div class="chapter">
+<b>Chapter 1 — Add NCERT Chapter Name</b>
+<a href="#" onclick="openChapter('Class 9 - Chapter 1')">Open Chapter</a>
+</div>
 
+<div class="chapter">
+<b>Chapter 2 — Add NCERT Chapter Name</b>
+<a href="#" onclick="openChapter('Class 9 - Chapter 2')">Open Chapter</a>
+</div>
 
-    <!-- ================= CLASS 12 ================= -->
-    <div class="class-card">
-      <h3>📙 Class 12</h3>
+<div class="chapter">
+<b>Chapter 3 — Add NCERT Chapter Name</b>
+<a href="#" onclick="openChapter('Class 9 - Chapter 3')">Open Chapter</a>
+</div>
 
-      <!-- ADD CLASS 12 CHAPTERS HERE -->
+<div class="chapter">
+<b>Chapter 4 — Add NCERT Chapter Name</b>
+<a href="#" onclick="openChapter('Class 9 - Chapter 4')">Open Chapter</a>
+</div>
 
-      <div class="chapter">
-        <div class="chapter-name">Chapter 1 — Add Chapter Name</div>
+<div class="chapter">
+<b>Chapter 5 — Add NCERT Chapter Name</b>
+<a href="#" onclick="openChapter('Class 9 - Chapter 5')">Open Chapter</a>
+</div>
 
-        <div class="buttons">
-          <a class="demo-btn" href="#" target="_blank">
-            Free Demo
-          </a>
+<div class="chapter">
+<b>Chapter 6 — Add NCERT Chapter Name</b>
+<a href="#" onclick="openChapter('Class 9 - Chapter 6')">Open Chapter</a>
+</div>
 
-          <a class="buy-btn" href="#">
-            Buy Notes ₹100
-          </a>
-        </div>
-      </div>
+<div class="chapter">
+<b>Chapter 7 — Add NCERT Chapter Name</b>
+<a href="#" onclick="openChapter('Class 9 - Chapter 7')">Open Chapter</a>
+</div>
 
-    </div>
+<div class="chapter">
+<b>Chapter 8 — Add NCERT Chapter Name</b>
+<a href="#" onclick="openChapter('Class 9 - Chapter 8')">Open Chapter</a>
+</div>
 
+<div class="chapter">
+<b>Chapter 9 — Add NCERT Chapter Name</b>
+<a href="#" onclick="openChapter('Class 9 - Chapter 9')">Open Chapter</a>
+</div>
 
-    <!-- ================= B.Sc ================= -->
-    <div class="class-card">
-      <h3>🎓 B.Sc Science</h3>
+<div class="chapter">
+<b>Chapter 10 — Add NCERT Chapter Name</b>
+<a href="#" onclick="openChapter('Class 9 - Chapter 10')">Open Chapter</a>
+</div>
 
-      <!-- ADD B.Sc SUBJECTS / CHAPTERS HERE -->
+<a class="back" href="#" onclick="showPage('home')">← Back</a>
 
-      <div class="chapter">
-        <div class="chapter-name">Subject — Add Subject Name</div>
-
-        <div class="buttons">
-          <a class="demo-btn" href="#" target="_blank">
-            Free Demo
-          </a>
-
-          <a class="buy-btn" href="#">
-            Buy Notes ₹100
-          </a>
-        </div>
-      </div>
-
-    </div>
+</div>
+</div>
 
 
-    <!-- ================= M.Sc CHEMISTRY ================= -->
-    <div class="class-card">
-      <h3>🧪 M.Sc Chemistry</h3>
+<!-- ================= CLASS 10 ================= -->
 
-      <!-- ADD M.Sc CHEMISTRY TOPICS HERE -->
+<div id="class10" class="hidden">
 
-      <div class="chapter">
-        <div class="chapter-name">Topic — Add Topic Name</div>
+<h2>Class 10 Science</h2>
 
-        <div class="buttons">
-          <a class="demo-btn" href="#" target="_blank">
-            Free Demo
-          </a>
+<div class="class-card">
 
-          <a class="buy-btn" href="#">
-            Buy Notes ₹100
-          </a>
-        </div>
-      </div>
+<div class="chapter">
+<b>Chapter 1 — Chemical Reactions and Equations</b>
+<a href="#" onclick="openChapter('Class 10 - Chemical Reactions and Equations')">Open Chapter</a>
+</div>
 
-    </div>
+<div class="chapter">
+<b>Chapter 2 — Acids, Bases and Salts</b>
+<a href="#" onclick="openChapter('Class 10 - Acids, Bases and Salts')">Open Chapter</a>
+</div>
 
-  </div>
+<div class="chapter">
+<b>Chapter 3 — Metals and Non-metals</b>
+<a href="#" onclick="openChapter('Class 10 - Metals and Non-metals')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 4 — Carbon and Its Compounds</b>
+<a href="#" onclick="openChapter('Class 10 - Carbon and Its Compounds')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 5 — Life Processes</b>
+<a href="#" onclick="openChapter('Class 10 - Life Processes')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 6 — Control and Coordination</b>
+<a href="#" onclick="openChapter('Class 10 - Control and Coordination')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 7 — How do Organisms Reproduce?</b>
+<a href="#" onclick="openChapter('Class 10 - Reproduction')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 8 — Heredity</b>
+<a href="#" onclick="openChapter('Class 10 - Heredity')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 9 — Light – Reflection and Refraction</b>
+<a href="#" onclick="openChapter('Class 10 - Light')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 10 — The Human Eye and the Colourful World</b>
+<a href="#" onclick="openChapter('Class 10 - Human Eye')">Open Chapter</a>
+</div>
+
+<a class="back" href="#" onclick="showPage('home')">← Back</a>
+
+</div>
+</div>
 
 
-  <!-- ================= DPP ================= -->
+<!-- ================= CLASS 11 ================= -->
 
-  <h2 class="section-title">📝 DPP</h2>
+<div id="class11" class="hidden">
 
-  <div class="class-grid">
+<h2>Class 11</h2>
 
-    <div class="class-card">
-      <h3>Science DPP</h3>
+<div class="class-card">
 
-      <p>Chapter-wise Daily Practice Problems</p>
+<h3>⚛️ Chemistry</h3>
 
-      <div class="buttons">
-        <a class="demo-btn" href="#" target="_blank">
-          Free DPP Demo
-        </a>
+<div class="chapter">
+<b>Part I — Chapter 1: Some Basic Concepts of Chemistry</b>
+<a href="#" onclick="openChapter('Class 11 Chemistry - Some Basic Concepts')">Open Chapter</a>
+</div>
 
-        <a class="buy-btn" href="#">
-          Buy DPP ₹100
-        </a>
-      </div>
+<div class="chapter">
+<b>Part I — Chapter 2: Structure of Atom</b>
+<a href="#" onclick="openChapter('Class 11 Chemistry - Structure of Atom')">Open Chapter</a>
+</div>
 
-    </div>
+<div class="chapter">
+<b>Part I — Chapter 3: Classification of Elements and Periodicity in Properties</b>
+<a href="#" onclick="openChapter('Class 11 Chemistry - Periodicity')">Open Chapter</a>
+</div>
 
-  </div>
+<div class="chapter">
+<b>Part I — Chapter 4: Chemical Bonding and Molecular Structure</b>
+<a href="#" onclick="openChapter('Class 11 Chemistry - Chemical Bonding')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Part I — Chapter 5: Thermodynamics</b>
+<a href="#" onclick="openChapter('Class 11 Chemistry - Thermodynamics')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Part I — Chapter 6: Equilibrium</b>
+<a href="#" onclick="openChapter('Class 11 Chemistry - Equilibrium')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Part II — Chapter 1: Redox Reactions</b>
+<a href="#" onclick="openChapter('Class 11 Chemistry - Redox Reactions')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Part II — Chapter 2: Organic Chemistry – Some Basic Principles and Techniques</b>
+<a href="#" onclick="openChapter('Class 11 Chemistry - Organic Basics')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Part II — Chapter 3: Hydrocarbons</b>
+<a href="#" onclick="openChapter('Class 11 Chemistry - Hydrocarbons')">Open Chapter</a>
+</div>
+
+<a class="back" href="#" onclick="showPage('home')">← Back</a>
+
+</div>
+</div>
+
+
+<!-- ================= CLASS 12 ================= -->
+
+<div id="class12" class="hidden">
+
+<h2>Class 12 Chemistry</h2>
+
+<div class="class-card">
+
+<div class="chapter">
+<b>Chapter 1 — Solutions</b>
+<a href="#" onclick="openChapter('Class 12 - Solutions')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 2 — Electrochemistry</b>
+<a href="#" onclick="openChapter('Class 12 - Electrochemistry')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 3 — Chemical Kinetics</b>
+<a href="#" onclick="openChapter('Class 12 - Chemical Kinetics')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 4 — The d- and f-Block Elements</b>
+<a href="#" onclick="openChapter('Class 12 - d and f Block')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 5 — Coordination Compounds</b>
+<a href="#" onclick="openChapter('Class 12 - Coordination Compounds')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 6 — Haloalkanes and Haloarenes</b>
+<a href="#" onclick="openChapter('Class 12 - Haloalkanes')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 7 — Alcohols, Phenols and Ethers</b>
+<a href="#" onclick="openChapter('Class 12 - Alcohols')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 8 — Aldehydes, Ketones and Carboxylic Acids</b>
+<a href="#" onclick="openChapter('Class 12 - Aldehydes')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 9 — Amines</b>
+<a href="#" onclick="openChapter('Class 12 - Amines')">Open Chapter</a>
+</div>
+
+<div class="chapter">
+<b>Chapter 10 — Biomolecules</b>
+<a href="#" onclick="openChapter('Class 12 - Biomolecules')">Open Chapter</a>
+</div>
+
+<a class="back" href="#" onclick="showPage('home')">← Back</a>
+
+</div>
+</div>
+
+
+<!-- ================= B.SC ================= -->
+
+<div id="bsc" class="hidden">
+
+<h2>B.Sc Medical Science</h2>
+
+<div class="class-card">
+
+<div class="chapter">
+<b>Subject 1 — Add Subject Name</b>
+<a href="#" onclick="openChapter('B.Sc Subject 1')">Open Subject</a>
+</div>
+
+<div class="chapter">
+<b>Subject 2 — Add Subject Name</b>
+<a href="#" onclick="openChapter('B.Sc Subject 2')">Open Subject</a>
+</div>
+
+<div class="chapter">
+<b>Subject 3 — Add Subject Name</b>
+<a href="#" onclick="openChapter('B.Sc Subject 3')">Open Subject</a>
+</div>
+
+<a class="back" href="#" onclick="showPage('home')">← Back</a>
+
+</div>
+</div>
+
+
+<!-- ================= M.SC ================= -->
+
+<div id="msc" class="hidden">
+
+<h2>M.Sc Chemistry</h2>
+
+<div class="class-card">
+
+<div class="chapter">
+<b>Inorganic Chemistry</b>
+<a href="#" onclick="openChapter('M.Sc Inorganic Chemistry')">Open</a>
+</div>
+
+<div class="chapter">
+<b>Organic Chemistry</b>
+<a href="#" onclick="openChapter('M.Sc Organic Chemistry')">Open</a>
+</div>
+
+<div class="chapter">
+<b>Physical Chemistry</b>
+<a href="#" onclick="openChapter('M.Sc Physical Chemistry')">Open</a>
+</div>
+
+<div class="chapter">
+<b>Analytical Chemistry</b>
+<a href="#" onclick="openChapter('M.Sc Analytical Chemistry')">Open</a>
+</div>
+
+<a class="back" href="#" onclick="showPage('home')">← Back</a>
+
+</div>
+</div>
+
+
+<!-- ================= CHAPTER PAGE ================= -->
+
+<div id="chapterPage" class="hidden">
+
+<div class="chapter-page">
+
+<h2 id="chapterTitle"></h2>
+
+<div class="note">
+<b>📖 Free Demo Notes</b>
+<br>
+Preview the notes before purchasing.
+</div>
+
+<div class="option">
+<a class="demo" href="#" target="_blank">
+👀 Open Free Demo
+</a>
+</div>
+
+<div class="option">
+<a class="buy" href="#">
+💳 Buy & Pay — ₹100
+</a>
+</div>
+
+<div class="option">
+<a class="download" href="#">
+⬇️ Download
+</a>
+</div>
+
+<br>
+
+<a class="back" href="#" onclick="goBack()">
+← Back to Chapters
+</a>
+
+</div>
+</div>
 
 </div>
 
 
-<footer>
-  <b>Radhey A1 Notes</b>
-  <br>
-  Science Notes & DPP
-  <br><br>
-  © 2026 Radhey A1 Notes
-</footer>
+<script>
+
+let previousPage = "home";
+
+function showPage(page){
+
+document.querySelectorAll(".container > div").forEach(function(el){
+el.classList.add("hidden");
+});
+
+document.getElementById(page).classList.remove("hidden");
+
+window.scrollTo(0,0);
+}
+
+function openChapter(name){
+
+previousPage = document.querySelector(
+'.container > div:not(.hidden)'
+)?.id || "home";
+
+document.getElementById("chapterTitle").innerText = name;
+
+showPage("chapterPage");
+}
+
+function goBack(){
+
+showPage(previousPage);
+
+}
+
+</script>
 
 </body>
 </html>
