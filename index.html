@@ -1,80 +1,328 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Radhey A1 Notes</title>
+
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f6f8fc;color:#172033}
-header{background:#182848;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:5}
-.logo{font-size:25px;font-weight:800}.tag{font-size:13px;opacity:.85}
-nav a{color:white;text-decoration:none;margin-left:18px;font-size:14px}
-.hero{padding:70px 6%;background:linear-gradient(135deg,#182848,#4b6cb7);color:white}
-.hero h1{font-size:44px;margin:0 0 12px}.hero p{font-size:18px;max-width:650px;line-height:1.6}
-.btn{display:inline-block;padding:12px 18px;border-radius:9px;text-decoration:none;font-weight:700;border:0;cursor:pointer}
-.primary{background:#ffd166;color:#172033}.light{background:white;color:#182848;margin-left:8px}
-section{padding:45px 6%}h2{font-size:30px;margin-top:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
-.card{background:white;padding:22px;border-radius:15px;box-shadow:0 5px 20px #17203312}
-.card h3{margin-top:0}.price{font-weight:800;font-size:20px;margin:14px 0}
-.demo{border:2px solid #4b6cb7}.small{font-size:13px;color:#657089;line-height:1.5}
-footer{background:#182848;color:white;text-align:center;padding:25px}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(135deg, #5b21b6, #7c3aed);
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 25px 15px;
+}
+
+.section-title {
+  text-align: center;
+  margin: 30px 0 20px;
+}
+
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.class-card {
+  background: white;
+  border-radius: 15px;
+  padding: 22px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.class-card h3 {
+  margin-top: 0;
+  color: #5b21b6;
+}
+
+.chapter {
+  border-top: 1px solid #eee;
+  padding: 14px 0;
+}
+
+.chapter:first-of-type {
+  border-top: none;
+}
+
+.chapter-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+button,
+.demo-btn,
+.buy-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 9px 13px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.demo-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.buy-btn {
+  background: #7c3aed;
+  color: white;
+}
+
+.note {
+  background: #fff7ed;
+  border-left: 5px solid #f97316;
+  padding: 15px;
+  margin: 25px 0;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  background: #111827;
+  color: white;
+  padding: 25px;
+  margin-top: 35px;
+}
+
+.small {
+  font-size: 13px;
+  color: #666;
+}
 </style>
 </head>
+
 <body>
+
 <header>
-  <div><div class="logo">Radhey A1 Notes</div><div class="tag">Science notes made simple</div></div>
-  <nav><a href="#classes">Classes</a><a href="#demo">Free Demo</a><a href="#dpp">DPP</a></nav>
+  <h1>📚 Radhey A1 Notes</h1>
+  <p>Science Notes • DPP • Study Material</p>
 </header>
 
-<div class="hero">
-  <h1>Study Smarter with Radhey A1 Notes 📚</h1>
-  <p>Class 9, 10, 11, 12, B.Sc and M.Sc Chemistry notes and DPPs. Every chapter and DPP is ₹100.</p>
-  <a class="btn primary" href="#classes">Explore Notes</a>
-  <a class="btn light" href="#demo">View Free Demo</a>
+<div class="container">
+
+  <div class="note">
+    <b>🎁 Free Demo:</b> Preview sample notes before purchasing.
+    <br>
+    <span class="small">
+      Paid notes are provided only after successful payment verification.
+    </span>
+  </div>
+
+  <h2 class="section-title">Choose Your Class</h2>
+
+  <div class="class-grid">
+
+    <!-- ================= CLASS 9 ================= -->
+    <div class="class-card">
+      <h3>📘 Class 9</h3>
+
+      <!-- ADD CLASS 9 CHAPTERS HERE -->
+
+      <div class="chapter">
+        <div class="chapter-name">Chapter 1 — Add Chapter Name</div>
+
+        <div class="buttons">
+          <a class="demo-btn" href="#" target="_blank">
+            Free Demo
+          </a>
+
+          <a class="buy-btn" href="#">
+            Buy Notes ₹100
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ================= CLASS 10 ================= -->
+    <div class="class-card">
+      <h3>📗 Class 10</h3>
+
+      <!-- ADD CLASS 10 CHAPTERS HERE -->
+
+      <div class="chapter">
+        <div class="chapter-name">Chapter 1 — Add Chapter Name</div>
+
+        <div class="buttons">
+          <a class="demo-btn" href="#" target="_blank">
+            Free Demo
+          </a>
+
+          <a class="buy-btn" href="#">
+            Buy Notes ₹100
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ================= CLASS 11 ================= -->
+    <div class="class-card">
+      <h3>📕 Class 11</h3>
+
+      <!-- ADD CLASS 11 CHAPTERS HERE -->
+
+      <div class="chapter">
+        <div class="chapter-name">Chapter 1 — Add Chapter Name</div>
+
+        <div class="buttons">
+          <a class="demo-btn" href="#" target="_blank">
+            Free Demo
+          </a>
+
+          <a class="buy-btn" href="#">
+            Buy Notes ₹100
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ================= CLASS 12 ================= -->
+    <div class="class-card">
+      <h3>📙 Class 12</h3>
+
+      <!-- ADD CLASS 12 CHAPTERS HERE -->
+
+      <div class="chapter">
+        <div class="chapter-name">Chapter 1 — Add Chapter Name</div>
+
+        <div class="buttons">
+          <a class="demo-btn" href="#" target="_blank">
+            Free Demo
+          </a>
+
+          <a class="buy-btn" href="#">
+            Buy Notes ₹100
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ================= B.Sc ================= -->
+    <div class="class-card">
+      <h3>🎓 B.Sc Science</h3>
+
+      <!-- ADD B.Sc SUBJECTS / CHAPTERS HERE -->
+
+      <div class="chapter">
+        <div class="chapter-name">Subject — Add Subject Name</div>
+
+        <div class="buttons">
+          <a class="demo-btn" href="#" target="_blank">
+            Free Demo
+          </a>
+
+          <a class="buy-btn" href="#">
+            Buy Notes ₹100
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ================= M.Sc CHEMISTRY ================= -->
+    <div class="class-card">
+      <h3>🧪 M.Sc Chemistry</h3>
+
+      <!-- ADD M.Sc CHEMISTRY TOPICS HERE -->
+
+      <div class="chapter">
+        <div class="chapter-name">Topic — Add Topic Name</div>
+
+        <div class="buttons">
+          <a class="demo-btn" href="#" target="_blank">
+            Free Demo
+          </a>
+
+          <a class="buy-btn" href="#">
+            Buy Notes ₹100
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= DPP ================= -->
+
+  <h2 class="section-title">📝 DPP</h2>
+
+  <div class="class-grid">
+
+    <div class="class-card">
+      <h3>Science DPP</h3>
+
+      <p>Chapter-wise Daily Practice Problems</p>
+
+      <div class="buttons">
+        <a class="demo-btn" href="#" target="_blank">
+          Free DPP Demo
+        </a>
+
+        <a class="buy-btn" href="#">
+          Buy DPP ₹100
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
 </div>
 
-<section id="classes">
-<h2>Choose Your Class</h2>
-<div class="grid">
-<div class="card"><h3>Class 9</h3><p class="small">Science Notes & DPPs</p><div class="price">₹100 / item</div></div>
-<div class="card"><h3>Class 10</h3><p class="small">Science Notes & DPPs</p><div class="price">₹100 / item</div></div>
-<div class="card"><h3>Class 11</h3><p class="small">Science Notes & DPPs</p><div class="price">₹100 / item</div></div>
-<div class="card"><h3>Class 12</h3><p class="small">Science Notes & DPPs</p><div class="price">₹100 / item</div></div>
-<div class="card"><h3>B.Sc</h3><p class="small">Science Notes & DPPs</p><div class="price">₹100 / item</div></div>
-<div class="card"><h3>M.Sc Chemistry</h3><p class="small">Chemistry Notes & DPPs</p><div class="price">₹100 / item</div></div>
-</div>
-</section>
 
-<section id="demo">
-<h2>Free Demo</h2>
-<div class="card demo">
-<h3>Coordination Compounds — Demo Notes</h3>
-<p class="small">Preview the notes before buying. The full paid notes can be unlocked after verified payment.</p>
-<a class="btn primary" href="#" onclick="alert('Demo PDF will be connected here.');return false;">Open Free Demo</a>
-</div>
-</section>
+<footer>
+  <b>Radhey A1 Notes</b>
+  <br>
+  Science Notes & DPP
+  <br><br>
+  © 2026 Radhey A1 Notes
+</footer>
 
-<section id="dpp">
-<h2>DPPs</h2>
-<div class="grid">
-<div class="card">
-<h3>Sample DPP</h3><p class="small">Practice material. Full DPP access is ₹100.</p>
-<div class="price">₹100</div>
-<button class="btn primary" onclick="alert('Payment gateway will be connected here.');">Buy DPP — ₹100</button>
-</div>
-</div>
-</section>
-
-<section>
-<h2>How it works</h2>
-<div class="grid">
-<div class="card"><h3>1. Choose</h3><p class="small">Select your class, chapter or DPP.</p></div>
-<div class="card"><h3>2. Pay</h3><p class="small">Choose an available payment method.</p></div>
-<div class="card"><h3>3. Download</h3><p class="small">After verified payment, your purchased PDF is unlocked.</p></div>
-</div>
-</section>
-
-<footer>© 2026 Radhey A1 Notes · Notes • DPPs • Science</footer>
 </body>
 </html>
